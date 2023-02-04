@@ -1,0 +1,20 @@
+create database radical;
+
+create table students(id bigint not null primary key auto_increment,firstname varchar(300),lastname varchar(300),email varchar(300),
+                     dob varchar(300),education varchar(300),location varchar(300),about varchar(300),status varchar(300))
+
+                     {
+                            location.map((value,index)=>(
+                            <tr key={index}>
+                                <td>{value.ip_address}</td>
+                                <td>{value.city}</td>
+                                <td>{value.region}</td>
+                                <td>{value.country}</td>
+                                <td>{value.postal_code}</td>
+                                <td>{value.longitude} & {value.latitude}</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>    
+                            ))
+                        }
+                        
